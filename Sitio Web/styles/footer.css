@@ -1,0 +1,81 @@
+/*FOOTER-----------------------------------------------------------------------*/
+body{
+	overflow-x: hidden;
+}
+footer{
+	background-color: var(--grisFooter);
+	font-family: var(--fuente);
+	font-weight: 300;
+	color: var(--blanco);
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 6%;
+	margin-top: 0;
+	position: relative;
+}
+
+/*TODOS LOS ELEMENTOS POR ENCIMA DE LA IMG*/
+footer :not(:last-child) {
+	z-index: 2;
+}
+
+/*ICONO WA, IG, FB*/
+.iconosRedes{
+	width: 32px;
+	height: 32px;
+}
+
+footer h2{
+	font-weight: bold;
+	margin-top: 6%;
+}
+
+footer p{
+	color: var(--blanco);
+	width: 80%;
+	margin: 6%;
+}
+
+/*DIV CON LOS ICONOS*/
+footer div:nth-child(3){
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+	margin-top: 6%;	
+	overflow: hidden;
+}
+
+footer :nth-child(2){
+	display: flex;
+	flex-direction: column;
+	line-height: 22px;
+	text-align:center;
+}
+
+footer :first-child{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 22px;
+}
+
+.imgFooter{
+	position: absolute;
+	overflow-x: hidden;
+	width: 744px;
+	height: 275px;
+	
+	background: url(../images/casona.svg);
+	background-repeat: no-repeat;
+
+	left: -62%;
+	top: 28%;	
+}
+
+footer .enlacePortafolio{
+	font-size: 10px;
+	color: var(--grisFondo);
+}

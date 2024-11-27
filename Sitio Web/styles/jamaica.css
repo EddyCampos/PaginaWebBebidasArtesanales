@@ -1,0 +1,50 @@
+/*JAMAICA----------------------------------------------------------*/
+
+.menuJamaica{
+	background-color: var(--naranja);
+}
+
+#jamaica .img_Producto{
+	background-color: var(--naranja);
+}
+
+#jamaica .circuloGrande{
+	background-color: var(--naranjaClaro);
+}
+
+#jamaica .circuloPequeño{
+	background-color: var(--blanco);
+}
+
+#jamaica .desc_Producto h4{
+	font-family: var(--fuente);
+	font-size: 18px;
+	color: var(--azulTipografia);
+}
+
+#jamaica .desc_Producto .texto_Producto :first-child{
+	line-height: 6px;
+}
+
+#jamaica .desc_Producto .boton{
+	margin-top: -2%;
+}
+
+#jamaica .tipos{
+	margin-top: 4%;
+}
+
+#jamaica .desc_Producto .texto_Producto{
+	display: flex;
+	width: 90%;
+	gap: 5%;
+	margin-top: 3%;
+}
+
+#jamaica .desc_Producto img{
+	margin-top: 5%;
+}
+
+#jamaica .desc_Producto p{
+	width: 95%;
+}

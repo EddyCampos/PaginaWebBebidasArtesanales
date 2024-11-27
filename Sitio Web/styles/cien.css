@@ -1,0 +1,54 @@
+/*CIEN, TODOS PRODUCTOS 3 PRESENTACIONES------------------------------------------*/
+
+.menuCien{
+	background-color: var(--rojo);
+}
+
+.menuCien .navegacion .lineasMenu .linea{
+	background-color: var(--blanco);
+}
+
+#cien .img_Producto{
+	background-color: var(--rojo);
+}
+
+#cien .circuloGrande{
+	background-color: var(--rojoClaro);
+}
+
+#cien .circuloPequeño{
+	background-color: var(--blanco);
+}
+
+/*NOMBRE Y BOTON*/
+#cien .desc_Producto :first-child{
+	gap: 20%;
+}
+
+/*TAMAÑO IMAGEN GALON TODOS*/
+.desc_Producto .presentaciones:last-of-type img{
+	width: 63px;
+	height: 92px;
+}
+
+/*SEPARACION PRODUCTOS TODOS*/
+.desc_Producto .tipos{
+	gap: %;
+}
+
+.tipos{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 15%;
+	
+
+}
+
+.presentaciones{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+}

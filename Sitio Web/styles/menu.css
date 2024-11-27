@@ -1,0 +1,259 @@
+/*VARIABLES TODO EL SITIO*/
+:root{
+	--amarillo: #F3BB25;
+	--amarilloClaro: #F5C959;
+
+	--azul: #27769D;
+	--azulClaro: #5B91B1;
+	--azulTipografia: #082838;
+
+	--rojo: #C81338;
+	--rojoClaro: #D94662;
+
+	--verde: #70BB32;
+	--verdeClaro: #8EC961;
+
+	--naranja: #FF8712;
+	--naranjaClaro: #F39E57;
+
+	--grisFondo: #B9B7AF;
+	--grisCirculo: #C7C5BF;
+
+	--blanco: #F5F3E8;
+	--grisFooter: #303030;
+
+	--fuente: "Raleway", sans-serif;
+}
+
+/*ESTILO SCROLL TODO EL SITIO*/
+html{
+	scroll-behavior: smooth;
+}
+
+/*MENÚ-----------------------------------------------------------------------*/
+
+/*LINKS SUBMENUS CATEGORIA*/
+#cervezas{
+	scroll-margin-block-start: 10px;
+}
+
+#tes{	
+  	scroll-margin-block-start: 10px;
+}
+
+#gaseosas{	
+  	scroll-margin-block-start: 10px;
+}
+
+
+#logo{
+	width: 115px;
+	height: 34px;
+	margin-left: 24%;
+	z-index: 8;
+	position: relative;
+	
+}
+
+/*CAMBIA COLOR LOGO*/
+.menuIndex #logo{
+	animation: cambiaLogo 10s infinite ease-in-out;
+}
+
+nav{
+	width: 100%;
+	height: 5.5em;
+	background-color: var(--amarillo);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menuIndex{
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+}
+
+/*OCULTA MENU DESKTOP Y ANIMACION*/
+#menuDesktop {
+	display: none;
+}
+
+#menuAnimacion #menuDesktop a{
+	animation: cambiaColorDesktop 10s infinite ease-in-out
+}
+
+
+/*ICONO MENU*/
+.contenedorMenu{
+	width: 75px;
+	padding-right: 7.5%;
+}
+
+.navegacion{
+	width: 100%;
+	position: absolute;
+	margin-top: 12%;
+}
+
+.navegacion .contenedorMenu li{
+	list-style: none;
+}
+
+.contenedorMenu{
+	position: relative;
+	height: 84px;
+	width: auto;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.navegacion div{
+	width: 100%;
+	height: auto 100%;
+}
+
+/*ESTILO CHECKBOX*/
+.navegacion .contenedorMenu .checkbox{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	z-index: 13;
+	margin-left: 7%;
+}
+
+/*ESTLOS LINEAS*/
+.navegacion .contenedorMenu .lineasMenu{
+	display: block;
+	height: 35px;
+	width: 40px;
+	z-index: 12;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.navegacion .lineasMenu .linea{
+	display: block;
+	height: 9px;
+	width: 100%;
+	background-color: var(--grisFooter);
+	border-radius: 1px;
+	z-index: 12;
+}
+
+/*CAMBIA COLOR LINEAS*/
+.menuIndex .navegacion .lineasMenu .linea{
+	animation: cambiaColorLinea 10s infinite ease-in-out;
+}
+
+/*ESTILO MENU QUE ABRE*/
+.navegacion .opcionesMenu{
+	position: fixed;
+	top: 0%;
+	background-color: var(--grisFooter);
+	width: 100vw;
+	height: 100vh;
+	transform: translate(-200%);
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.5s ease-in-out;
+	z-index: 10;
+	font-family: var(--fuente);
+	font-weight: bold;
+	color: var(--blanco);
+	padding: 5em 8em 5em 2.8em;
+	line-height: 2.5em;
+	text-align: left;
+}
+
+/*MENU CATEGORIAS*/
+#subMenu{
+	font-weight: lighter;
+	text-indent: 1.2em;
+}
+
+/*DEFINEN ANIMACIONES LINEAS*/
+.navegacion .lineasMenu .lineaUno{
+	transform-origin: 0% 0%;
+	transition: transform 0.4s ease-in-out;
+}
+
+.navegacion .lineasMenu .lineaDos{
+	transition: transform 0.2s ease-in-out;
+}
+
+.navegacion .lineasMenu .lineaTres{
+	transform-origin: 0% 100%;
+	transition: transform 0.4s ease-in-out;
+}
+
+/*EJECUTAN ANIMACIONES*/
+.navegacion input[type="checkbox"]:checked ~ .opcionesMenu{
+	transform: translateX(7.47%);
+}
+
+.menuIndex .navegacion input[type="checkbox"]:checked ~ #logo{
+	content: url(../images/logoBlanco.svg);
+	animation-play-state: paused;
+}
+
+.navegacion input[type="checkbox"]:checked ~ .lineasMenu{
+	position: fixed;
+	animation-play-state: paused;
+}
+
+.navegacion input[type="checkbox"]:checked{
+	position: fixed;
+}
+
+.navegacion input[type="checkbox"]:checked ~ .lineasMenu .lineaUno{
+	transform: rotate(45deg);
+	background-color: var(--blanco);
+	animation-play-state: paused;
+}
+
+.navegacion input[type="checkbox"]:checked ~ .lineasMenu .lineaDos{
+	transform: scaleY(0);
+	background-color: var(--blanco);
+	animation-play-state: paused;
+}
+
+.navegacion input[type="checkbox"]:checked ~ .lineasMenu .lineaTres{
+	transform: rotate(-45deg);
+	background-color: var(--blanco);
+	animation-play-state: paused;
+}
+
+@keyframes cambiaColorLinea{
+	0%{background-color: var(--grisFooter);}
+
+	40%{background-color: var(--grisFooter);}
+	50%{background-color: var(--blanco);}
+
+	90%{background-color: var(--blanco);}
+	100%{background-color: var(--grisFooter);}
+}
+
+@keyframes cambiaLogo{
+	0%{content: url(../images/logoNegro.svg);}
+
+	40%{content: url(../images/logoNegro.svg);}
+	50%{content: url(../images/logoBlanco.svg);}
+
+	90%{content: url(../images/logoBlanco.svg);}
+	100%{content: url(../images/logoNegro.svg);}
+}
+
+@keyframes cambiaColorDesktop{
+	0%{color: var(--grisFooter);}
+
+	40%{color: var(--grisFooter);}
+	50%{color: var(--blanco);}
+
+	90%{color: var(--blanco);}
+	100%{color: var(--grisFooter);}
+}

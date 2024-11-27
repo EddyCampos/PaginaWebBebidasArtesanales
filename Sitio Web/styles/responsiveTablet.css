@@ -1,0 +1,560 @@
+/*RESPONSIVE TABLET----------------------------------------------------------*/
+
+@media only screen and (min-width: 760px) and (max-width: 1023px){
+    #logo{
+        width: 125px;
+        height: 37px;
+    }
+
+    nav{
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .navegacion .contenedorMenu .lineasMenu{
+        margin-top: -3%;
+    }
+
+    .navegacion .opcionesMenu{
+        padding-top: 8%;
+    }
+
+    #pagIndex ul{
+        height: 600px;
+    }
+
+    /*CONTENEDOR IMG Y CIRCULO*/
+    #slider .imgSlider{
+        margin-left: 4em;
+    }
+
+    #slider .sliderUno{
+        background-size: 120%;
+        background-position: bottom;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    #slider .sliderDos{
+        background-size: 120%;
+        background-position: bottom;
+    }
+
+
+    #slider .sliderUno br{
+        display: none;
+    }
+
+    #slider .cirSliderUno{
+        width: 334px;
+        height: 334px;
+    }
+
+    #slider .cirSliderDos{
+        width: 253px;
+        height: 253px;
+    }
+
+    #slider img{
+       width: 280px;
+       height: 442px;
+    }
+
+    #slider h3{
+        font-size: 20pt;
+        margin-top: 6em;
+    }
+
+    #slider h1{
+        font-size: 60pt;
+        margin-left: 0;
+        padding-left: 0;
+        width: 40%;
+        margin-top: .5em;
+        margin-bottom: .5em;
+
+    }
+
+
+    #slider button{
+        font-size: 16pt;
+        width: 120px;
+        height: 35px;
+        top: 72%;
+    }
+
+    #slider .sliderDos :first-of-type h3{
+        margin-top: 5em;
+    }
+
+    #slider .sliderDos :nth-child(4){
+        font-size: 60pt;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+
+    #slider .sliderDos button{
+        margin-top: 1em;
+    }
+
+/*BURBUJA WA*/
+    #chatBox{
+        top: 89vh;
+        left: 90vw;
+    }
+
+/*********NUESTRAS BEBIDAS**********/
+
+    .segundaSeccion{
+        height: 500px;
+        background-size: 100%;
+        background-position: bottom;
+    }
+
+    .segundaSeccion h2{
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    .ejemplosProductos img{
+        width: 140px;
+        height: 200px;
+    }
+
+    .segundaSeccion .ejemplosProductos{
+        margin-top: -15em;
+        align-items: baseline;
+        gap: 2em;
+    }
+    
+
+/*********EL COMEJÉN**********/
+
+    .terceraSeccion{
+        height: 500px;
+        background-size: 100%;
+        background-position: top;
+    }
+
+    .terceraSeccion .circuloFab{
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .terceraSeccion div{
+        top: 8.5em;
+        left: 50%;
+    }
+
+    .terceraSeccion .circuloFab img{
+        width: 350px;
+        height: 350px;
+        margin-top: 0%;
+
+    }
+
+    .terceraSeccion h2{
+        margin-top: 25%;
+        margin-left: -50%;
+    }
+
+    .terceraSeccion p{
+        width: 40%;
+        margin-left: -50%;
+    }
+
+/*********NUESTRAS REDES**********/
+    
+    .cuartaSeccion{
+        height: 500px;
+        background-size: 150%;
+        background-position: bottom;
+    }
+
+    .circuloContacto{
+        width: 722px;
+        height: 722px;
+        top: 12%;
+        left: -45%;
+    }
+
+    .cuartaSeccion h2{
+        margin-top: 8%;
+    }
+
+    .contactoIndex{
+        margin-top: -2em;
+    }
+
+/*********FOOTER**********/
+
+    footer{
+        height: 220px;
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        padding-top: 1em;
+        align-items:flex-start;
+    }
+
+    footer h2{
+        margin-top: 0;
+    }
+
+    .menuFooter{
+        height: auto;
+        width: 43%;
+        align-items: flex-end;  
+    }
+
+    .contactoFooter{
+        height: auto;
+        width: 43%;
+        align-items: flex-start;
+    }
+
+    footer div:nth-child(3){
+        position: absolute;
+        width: 30%;
+        top: 30%;
+    }
+
+    footer .imgFooter{
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        background-size: 130%;
+        background-position: 75% 2%;
+    }
+
+    .iconosRedes{
+        width: 40px;
+        height: 40px;
+    }
+
+    footer p{
+        position: absolute;
+        width: 38%;
+        top: 55%;
+    }
+
+/********************PRODUCTOS************************/
+
+    .productos{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        column-gap: 6em;
+        position: relative;
+    }
+
+    .productos article{
+        margin-top: 1em;
+        margin-bottom: -1em;
+    }
+
+    .productos h2{
+        position: absolute;
+        top: -1em;
+        margin-bottom: -4em;
+    }
+
+    #prodEspeciales .especiales{
+        height: 350px;
+        width: 90%;
+        background-color: var(--blanco);
+    }
+
+    #prodEspeciales .especiales h2{
+        margin-top: -11%;  
+    }
+
+    #prodEspeciales .especiales p{
+        font-size: 13.5pt;
+        width: 46%;
+        margin-top: 10%;
+        margin-left: 53%;
+        text-align: left;
+    }
+
+    #prodEspeciales .especiales img{
+        margin-top: 1em;
+        margin-left: -21em;
+        
+    }
+
+    #prodEspeciales .especiales .cirEspeciales{
+        width: 480px;
+        height: 480px;
+        top: 15%;
+        left: -17%;
+    }
+
+/**************PRODUCTO INDIVIDUAL********************/
+
+    .img_Producto{
+        width: 100vw;
+        height: 400px;
+    }
+
+    .img_Producto img{
+        width: 300px;
+        height: 474px;
+        margin-top: -2%;
+    }
+
+    .img_Producto .circulos{
+        top: 52%;
+    }
+
+    .img_Producto .circulos .circuloGrande{
+        width: 340px;
+        height: 340px;
+    }
+
+    .img_Producto .circulos .circuloPequeño{
+        width: 260px;
+        height: 260px;
+    }
+
+    .desc_Producto .nombreBebida{
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .desc_Producto .boton{
+        height: 35px;
+    }
+
+    .desc_Producto h2{
+        margin-top: 2%;
+    }
+
+    .desc_Producto p{
+        width: 60%;
+    }
+
+/*************KILA**************/
+
+    #kila .desc_Producto .nombreBebida{
+        width: 60%;
+    }
+
+/*************CIEN**************/
+
+    #cien .desc_Producto .nombreBebida {
+        width: 70%;
+    }
+
+    #cien .desc_Producto .tipos{
+        width: 60%;
+    }
+
+/*************JAMAICA Y LIMON**************/
+
+    #jamaica .desc_Producto .nombreBebida {
+        width: 70%;
+    }
+
+    #jamaica .desc_Producto .texto_Producto {
+        width: 60%;
+        justify-content: space-between;
+        margin-bottom: -1%;
+    }
+
+   
+
+    #jamaica .desc_Producto p{
+        width: 60%;
+    }
+
+    #jamaica .desc_Producto .tipos{
+        width: 60%;
+    }
+
+    #limon .desc_Producto .nombreBebida {
+        width: 70%;
+    }
+
+    #limon .desc_Producto .texto_Producto {
+        width: 60%;
+        justify-content: space-between;
+        margin-bottom: 0%;
+    }
+
+  
+
+/*************CHIRRIPO**************/
+    
+    #chirripo .img_Producto img{
+        width: 300px;
+        height: 474px;
+        margin-top: -2%;
+    }
+
+    #chirripo .img_Producto .circulos{
+        top: 52%;
+    }
+
+    #chirripo .img_Producto .circulos .circuloGrande{
+        width: 340px;
+        height: 340px;
+    }
+
+    #chirripo .img_Producto .circulos .circuloPequeño{
+        width: 260px;
+        height: 260px;
+    }
+
+   
+
+    #chirripo .desc_Producto .nombreBebida{
+        margin-bottom: 2%;
+    }
+
+    #chirripo .desc_Producto h2{
+        margin-top: 4%;
+    }
+
+/*********************NOSOTROS************************/
+
+    #historia .imgNosotros{
+        width: 100vw;
+        height: 350px;
+
+        background-position: 0% 2%;
+    }
+
+    #historia .imgNosotros h1{
+        left: 60%;
+        top: 80%;
+        color: var(--azulFuente);
+    }
+
+    #personal ul{
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;   
+    }
+
+    #personal ul li{
+        width: 33%;
+        margin-bottom: 2%;
+    }
+
+    #personal .cirPersonal{
+        width: 180px;
+        height: 180px;
+    }    
+
+    #personal h2{
+        font-size: 20px;  
+    }
+
+    #personal ul li h3{
+        font-size: 18px;
+        margin-top: 16%;   
+    }
+
+    #personal h4{
+        font-size: 17px;
+    }
+
+    #personal ul li:nth-child(2) h3{
+        margin-top: 18%;
+    }
+
+    #personal ul li:nth-child(3) h3{
+        margin-top: 21%;
+    }
+
+    #personal ul li:nth-child(5) h3{
+        margin-top: 16%;
+    }
+
+    #personal ul li:nth-child(6) h3{
+        margin-top: 22%;
+    }
+
+/*********************CONTACTO************************/
+
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contacto h2{
+        margin-top: -2%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contacto .segundoGrupo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        gap: 5%;
+        margin-bottom: 4%;
+    }
+
+/*********************GALERIA************************/
+
+    #galeria h1{
+        position: absolute;
+        top: 2em;
+    }
+
+    #galeria{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 3%;  
+    }
+
+    #galeria div{
+        width: 45%;
+        margin-top: 1em;   
+    }
+
+    #galeria div:nth-child(2) {
+        margin-top: 5em;
+    }
+
+    #galeria div:nth-child(3) {
+        margin-top: 5em;
+    }
+
+    #contenedorInterno{
+        width: auto 50%;
+        height: 90%;
+    }
+
+    #contenedorPrincipal{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #imagenActiva{
+        width:auto;
+        height: 99%;
+        object-fit: cover;
+    }
+
+}
+
+/*********************************************/
+
+
+
+
+
+

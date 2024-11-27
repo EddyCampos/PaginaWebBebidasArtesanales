@@ -1,0 +1,41 @@
+/*PARADISE LIMÓN----------------------------------------------------------*/
+
+.menuLimon{
+	background-color: var(--verde);
+}
+
+#limon .img_Producto{
+	background-color: var(--verde);
+}
+
+#limon .circuloGrande{
+	background-color: var(--verdeClaro);
+}
+
+#limon .circuloPequeño{
+	background-color: var(--blanco);
+}
+
+#limon .desc_Producto .texto_Producto{
+	width: 90%;
+	gap: 5%;
+	margin-top: 3%;
+}
+
+#limon .desc_Producto h4{
+	font-family: var(--fuente);
+	font-size: 18px;
+	color: var(--azulTipografia);
+}
+
+#limon .desc_Producto .texto_Producto :first-child{
+	line-height: 6px;
+}
+
+#limon .desc_Producto .boton{
+	margin-top: -2%;
+}
+
+#limon .tipos{
+	margin-top: 6%;
+}

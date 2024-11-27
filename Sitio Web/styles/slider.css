@@ -1,0 +1,203 @@
+/*SLIDER------------------------------------------------------------------*/
+#pagIndex{	
+	overflow: hidden;
+}
+
+#pagIndex ul{
+	position: relative;
+	display: flex;
+	gap: 100%;
+	width: 100vw;
+	height: 640px;
+}
+
+#slider .sliderUno, .sliderDos{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+
+/*ESTILOS AMBOS SLIDERS*/
+#slider .sliderUno, .sliderDos, .sliderTres{
+	display: flex;
+	flex-flow: column wrap;
+	position: absolute;
+	width: 100%;
+	height: 640px;
+	overflow: hidden;
+}
+
+
+#pagIndex ul li div :not(:first-child){
+	margin-left: 46%;
+}
+
+#slider h3{
+	font-size: 19pt;
+	margin-top: 5.5em;
+	white-space: nowrap;
+	z-index: 2;
+}
+
+#slider h2{
+	font-size: 15pt;
+	z-index: 2;
+	margin-top: .5em;
+}
+
+#slider button{
+	font-size: 16pt;
+	color: var(--blanco);
+	text-align: center;
+
+	width: 120px;
+	height: 35px;
+	background-color: var(--rojo);
+	
+	z-index: 2;
+}
+
+#slider h1{
+	font-size: 60pt;	
+	line-height: 70px;
+	z-index: 2;
+	white-space: wrap;
+	margin-bottom: .3em;
+}
+
+#slider{
+	font-family: var(--fuente);
+	font-weight: 300;
+	color: var(--azulTipografia);
+}
+
+/*PRIMER SLIDER, AURUM*/
+#slider img{
+	width: 300px;
+	height: 474px;
+	transform: rotate(11.5deg);
+	z-index: 2;
+}
+
+
+
+#pagIndex #slider .amarillo{
+	background-color: var(--amarillo);
+}
+
+#slider .sliderUno{
+	background: url(../images/olaSlider_amarilla.svg);
+	background-size: 60em;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-color: var(--amarillo);	
+	z-index: -2;
+}
+
+#slider .sliderUno img{
+	animation: flota 1s infinite alternate ease-in-out;
+}
+
+#slider .sliderUno button{
+	margin-top: 3%;
+}
+
+/*SEGUNDO SLIDER, KILA*/
+
+#slider .sliderDos :nth-child(4){
+	font-size: 60pt;	
+	line-height: 70px;
+	margin-top: 14%;
+}
+
+#slider .sliderDos :nth-child(5){
+	margin-top: 2em;
+	padding-bottom: 2%;
+}
+
+#slider .sliderDos button{
+	margin-top: 8%;
+}
+
+#slider .sliderDos{
+	background: url(../images/olaSlider_azul.svg);
+	background-size: 60em;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-color: var(--azul);
+	z-index: -2;
+}
+
+#slider .sliderDos img{
+	animation: flota 1s infinite alternate ease-in-out;
+}
+
+/*CONTENEDOR IMG Y CIRCULO*/
+#slider .imgSlider{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 332px;
+	height: 480px;
+	margin-top: 5em;
+	margin-left: -5em;
+}
+
+/*CIRCULOS FONDO BOTELLAS*/
+.cirSlider{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 15em;
+	left: 1em
+}
+
+.cirSliderUno{
+	width: 332px;
+	height: 332px;
+	border-radius: 50%;
+	background-color: var(--amarilloClaro);
+	position: absolute;
+}
+
+.cirSliderDos{
+	width: 252px;
+	height: 252px;
+	border-radius: 50%;
+	background-color: var(--blanco);
+	position: absolute;
+}
+
+.sliderDos .cirSliderUno{
+	background-color: var(--azulClaro);
+}
+
+
+/*ANIMACIONES EJECUTADAS*/
+@keyframes flota{
+	0%{transform: rotate(10deg) translateY(0px) ;}
+	100%{transform: rotate(10deg) translateY(5px) ;}
+}
+
+/*ANIMACION CAMBIA SLIDER*/
+#slider{
+	animation: movSlider 10s infinite ease-in-out;
+}
+
+@keyframes movSlider{
+	0%{transform: translateX(0);}
+
+	40%{transform: translateX(0%);}
+	50%{transform: translateX(-100%);}
+	
+	90%{transform: translateX(-100%);}
+	100%{transform: translateX(-200%);}
+}
+
+#logo{
+	color: var(--blanco);
+}
+

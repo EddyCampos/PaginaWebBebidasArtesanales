@@ -1,0 +1,49 @@
+/*CONTACTO-----------------------------------------------------------------------*/
+
+#contacto{
+	color: var(--azulTipografia);
+}
+#contacto div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	font-family: var(--fuente);
+	line-height: 40px;
+}
+
+/*CONTÁCTENOS*/
+#contacto h1{
+	font-size: 40px;
+	color: var(--azulTipografia);
+	margin-bottom: 2%;
+}
+
+/*NUESTRAS REDES SOCIALES*/
+#contacto h2{
+	color: var(--azulTipografia);
+	font-weight: bold;
+	margin-bottom: 2%;
+}
+
+/*NUMERO. DIRECCIÓN, CORREO*/
+#contacto .primerGrupo{
+	font-size: 20px;
+	margin-top: 3%;
+}
+
+#contacto .primerGrupo :nth-child(3){
+	color: var(--rojo);
+}
+
+/*REDES SOCIALES*/
+#contacto .segundoGrupo{
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 38px;
+	color: var(--rojo);
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+
+

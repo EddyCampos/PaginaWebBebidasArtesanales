@@ -1,0 +1,272 @@
+<!--
+Autor: Eddy Campos Jiménez
+Fecha de Creación: 28 Mayo 2022
+Última actualización: 26 Junio 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Comején Bebidas</title>
+
+	<!--FAVICON-->
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
+	
+	<!--HOJAS DE ESTILOS-->
+	<link rel="stylesheet" href="bridge.css">
+	<!--LIBRERIA-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!--FUENTES-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+
+	<!--METADATOS-->
+	<meta name="title" content="El Comején Bebidas">
+	<meta name="description" content="Descripción de las bebidas, historia, e información de Contacto de la empresa El Comején Bebidas.">
+	<meta name="keywords" content="Bebidas, Naturales, Artesanales, Cerveza, Jugos, Tés Fríos, Costa Rica, Limón, Naranja, Saludables, Refrescantes">
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="Spanish">
+	<meta name="revisit-after" content="30 days">
+	<meta name="author" content="Eddy Campos Jiménez">
+
+</head>
+
+<body><!--CONTAINER-->
+
+	<!--BARRA DE MENU-->
+	<header>	
+ 
+		<!--MENU-->
+		<nav id="menuAnimacion" class="menuIndex">
+			<!--LOGO-->
+		    <a href="index.html"><img id="logo" src="images/logoNegro.svg" alt="Logo El Comején Bebidas"></a>
+
+		    <div id="menuDesktop">
+		    	<a href="index.html">INICIO</a>
+		    	<a href="productos.html">PRODUCTOS</a>
+		    	<a href="nosotros.html">NOSOTROS</a>
+		    	<a href="galeria.html">GALERÍA</a>
+		    	<a href="contacto.html">CONTACTO</a>
+		    </div>
+
+			<div class="navegacion">
+				<div class="contenedorMenu">
+					
+						<input type="checkbox" class="checkbox">
+						<div class="lineasMenu ">
+							<span class="linea lineaUno"></span>
+						    <span class="linea lineaDos"></span>
+						    <span class="linea lineaTres"></span>
+					
+					</div>
+				    <!--OPCIONES MENU-->
+				    <div class="opcionesMenu">
+				    	<ul>
+						    <li>
+							    <a href="index.html">INICIO</a>
+						    </li>
+
+						    <li>
+							    <a href="productos.html">PRODUCTOS</a>
+							    <!--SUBMENU CON CATEGORIAS-->
+							    <ul id="subMenu">
+							    	<li><a href="productos.html#cervezas">Cervezas Artesanales</a></li>
+							    	<li><a href="productos.html#gaseosas">Gaseosas Y Jugos</a></li>
+							    	<li><a href="productos.html#tes">Tés Fríos</a></li>
+							    </ul>
+					     	</li>
+
+						    <li>
+							    <a href="nosotros.html">NOSOTROS</a>
+						    </li>
+
+						    <li>
+							    <a href="galeria.html">GALERÍA</a>
+						    </li>
+
+						    <li>
+							    <a href="contacto.html">CONTACTO</a>
+						    </li>		
+					    </ul>
+				    </div>
+			    </div>
+			</div>
+		</nav>
+	</header>
+
+	<!--SECCIÓN PRINCIPAL SLIDER-->
+
+	<main id="pagIndex" class="seccionInicio">
+
+		<!--BURBUJA WA-->
+		<a href="https://wa.me/50686752751?text=Buenas,%20me%20gustaría%20ordenar%20una%20de%20sus%20Bebidas!%20" target="_blank">
+			<div id="chatBox">			
+				<div class="logoChat">				
+					<img src="images/logoWA.svg" alt="Logo WhatsApp">			
+				</div>
+				<div class="animacionChat"></div>
+			</div>
+		</a>
+
+		<ul id="slider">
+			<!--PRIMER PRODUCTO-->
+			<li>
+				<div class="sliderUno">
+					<div class="imgSlider">
+						<img src="images/aurum.webp" alt="Botella Cerveza AURUM">
+						<div class="cirSlider">
+							<div class="cirSliderUno"></div>
+							<div class="cirSliderDos"></div>
+						</div>
+					</div>					
+					<h3>Disfruta Nuestra</h3>
+					<h2>Cerveza Artesanal</h2>
+					<h1>AU<br>RUM</h1>
+					<h2>Estilo IPA</h2>
+					<button onclick="window.location.href='aurum.html'">ORDENAR</button>
+					
+					
+				</div>
+			</li>
+			
+			<!--SEGUNDO PRODUCTO-->
+			<li>			
+				<div class="sliderDos">
+					<div class="imgSlider">
+						<img src="images/kila.webp" alt="Botella Cereveza Kila">
+						<div class="cirSlider">
+							<div class="cirSliderUno"></div>
+							<div class="cirSliderDos"></div>
+						</div>
+					</div>
+					<h3>Disfruta Nuestra</h3>
+					<h2>Cerveza Artesanal</h2>
+					<h2>KILA</h2>
+					<h2>Con un suave y refrescante Sabor</h2>
+					<button onclick="window.location.href='kila.html'">ORDENAR</button>
+					
+				</div>
+			</li>
+
+			<!--REPITE PRIMER PRODUCTO-->
+			<li>
+				<div class="sliderUno">
+					<div class="imgSlider">
+						<img src="images/aurum.webp" alt="Botella Cerveza AURUM">
+						<div class="cirSlider">
+							<div class="cirSliderUno"></div>
+							<div class="cirSliderDos"></div>
+						</div>
+					</div>					
+					<h3>Disfruta Nuestra</h3>
+					<h2>Cerveza Artesanal</h2>
+					<h1>AU<br>RUM</h1>
+					<h2>Estilo IPA</h2>
+					<button onclick="window.location.href='aurum.html'">ORDENAR</button>
+				</div>
+			</li>
+		</ul>
+
+	</main>
+	
+	<!--SEGUNDA SECCIÓN, NUESTRAS BEBIDAS-->
+	<section class="segundaSeccion" id="enlaceFlecha">	
+
+		<!--OLAS BAJO EL SLIDER-->
+		<svg class="olas" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+			<style type="text/css">
+				.st0{fill:#F5C959;}
+			</style>
+			<g>
+			<path class="st0" d="M1509.4,44.9c-140.7,36.9-149.8-34.3-295.3-34.3c-145.4,0-145.4,34.9-290.8,34.9
+			c-145.4,0-145.4-34.9-290.8-34.9c-145.4,0-145.4,34.9-290.8,34.9c-145.4,0-145.4-34.9-290.8-34.9c-145.4,0-154.6,71.2-295.3,34.3
+			c-36.9-9.7,21.9-55,21.9-93.2c0-38.2-34.9-38.2-34.9-76.3c0-38.2,34.9-38.2,34.9-76.3c0-38.2-34.9-38.2-34.9-76.3
+			c0-38.2,34.9-38.2,34.9-76.3s-58.8-83.5-21.9-93.2c140.7-36.9,149.8,34.3,295.3,34.3c145.4,0,145.4-34.9,290.8-34.9
+			c145.4,0,145.4,34.9,290.8,34.9c145.4,0,145.4-34.9,290.8-34.9c145.4,0,145.4,34.9,290.8,34.9s154.6-71.2,295.3-34.3
+			c36.9,9.7-21.9,55-21.9,93.2c0,38.2,34.9,38.2,34.9,76.3c0,38.2-34.9,38.2-34.9,76.3c0,38.2,34.9,38.2,34.9,76.3
+			c0,38.2-43.9,43.8-34.3,80.7C1501,6.1,1546.3,35.2,1509.4,44.9z"/>
+			</g>
+		</svg>	
+		
+		<h2>NUESTRAS BEBIDAS</h2>
+		<p>
+		Contamos con cuatro familias de productos, entre los que se encuentran, Gaseosas y Jugos, Tés Fríos (0 calorías, sin azúcar) y Cervezas Artesanales.
+		</p>
+		<div class="ejemplosProductos">
+			<img data-aos="fade-left" id="primerEj" src="images/chirripo_cir.webp" alt="Botella Ginger-Ale Chirripó">
+			<img data-aos="fade-left" id="segundoEj" src="images/cien_cir.webp" alt="Botella Jugo Naranja Cien%">			
+			<img data-aos="fade-left" id="tercerEj" src="images/limon_cir.webp" alt="Botella Té Frío Limón Paradise">
+			<img data-aos="fade-left" id="cuartoEj" src="images/kila_cir.webp" alt="Botella Cerveza KILA">	
+		</div>
+	</section>
+	
+	<!--TERCERA SECCIÓN, EL COMEJEN-->
+	<section class="terceraSeccion">
+		<h2>EL COMEJÉN</h2>
+		<p>Somos una empresa Alajuelense que opera desde el 2019, en la producción de cervezas y bebidas no alcohólicas. </p>
+		<div data-aos="fade-left" class="circuloFab">		
+			<img src="images/fabrica.webp" alt="Instalaciones de la Empresa">
+		</div>		
+	</section>
+	
+	<!--CUARTA SECCIÓN, CONTACTO-->
+	<section class="cuartaSeccion">
+		<h2>NUESTRAS REDES</h2>
+
+		<div class="redesIndex">
+			<a class="enlaceBold" href="https://www.instagram.com/elcomejenbebidas/?hl=en" target="_blank">INSTAGRAM</a>
+			<a class="enlaceBold" href="https://wa.me/50686752751?text=Buenas,%20me%20gustaría%20ordenar%20una%20de%20sus%20Bebidas!%20" target="_blank">WHATSAPP</a>
+			<a class="enlaceBold" href="https://www.facebook.com/elcomejenbebidas/" target="_blank">FACEBOOK</a>
+		</div>
+
+		<h3>O PUEDES CONTÁCTARNOS</h3>
+		<div class="contactoIndex">
+			<a class="enlaceRegular" href="mailto:elcomejenbebidas@gmail.com" target="_blank">elcomejenbebidas@gmail.com</a>
+			<a class="enlaceRegular" href="tel:86752751">tel. 8675 2751</a>
+			<a class="enlaceRegular" href="https://www.google.com/maps/place/El+Comej%C3%A9n+Bebidas/@10.0118078,-84.2348954,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9637a0d0f85:0xdd1ac79ceeabace!8m2!3d10.0118023!4d-84.2327066" target="_blank">Alajuela, Costa Rica</a>
+		</div>
+		<div data-aos="fade-down-left" class="circuloContacto"></div>
+	</section>
+
+	<!--ÚLTIMA SECCIÓN, FOOTER-->
+	<footer>
+		<div class="menuFooter">
+			<a href="index.html">INICIO</a>
+			<a href="productos.html">PRODUCTOS</a>
+			<a href="nosotros.html">NOSOTROS</a>
+			<a href="galeria.html">GALERÍA</a>
+			<a href="contacto.html">CONTACTO</a>
+		</div>	
+		
+		<div class="contactoFooter">
+			<h2>Contáctenos</h2>
+			<a href="mailto:elcomejenbebidas@gmail.com" target="_blank">elcomejenbebidas@gmail.com</a>
+			<a href="tel:86752751" target="_blank">tel. 8675 2751</a>
+			<a href="https://www.google.com/maps/place/El+Comej%C3%A9n+Bebidas/@10.0118078,-84.2348954,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9637a0d0f85:0xdd1ac79ceeabace!8m2!3d10.0118023!4d-84.2327066" target="_blank">Alajuela, Costa Rica</a>
+		</div>
+
+		<div class="redesFooter">
+			<a href="https://www.instagram.com/elcomejenbebidas/?hl=en" target="_blank"><img class="iconosRedes" src="images/logoIG.svg" alt="Ícono Instagram"></a>
+			<a  href="https://wa.me/50686752751?text=Buenas,%20me%20gustaría%20ordenar%20una%20de%20sus%20Bebidas!%20" target="_blank"><img class="iconosRedes" src="images/logoWA.svg" alt="ícono WhatsApp"></a>
+			<a  href="https://www.facebook.com/elcomejenbebidas/" target="_blank"><img class="iconosRedes" src="images/logoFB.svg" alt="Ícono Facebook"></a>		
+		</div>
+
+		<p>TODOS LOS DERECHOS RESERVADOS
+		El Comején Bebidas© 2022</p>
+
+		<div class="imgFooter" aria-label="Imagen Silueta Casona"></div>
+	</footer>
+
+	<!--LINK JAVASCRIPT, LIBRERÍA TRANSICIONES-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+	
+</body>
+</html>

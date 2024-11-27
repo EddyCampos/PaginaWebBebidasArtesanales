@@ -1,0 +1,142 @@
+/*AURUM, ESTILOS TODOS PRODUCTOS--------------------------------------------------*/
+
+/*ESTILOS IMAGEN TODOS*/
+.img_Producto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 365px;
+	position: relative;
+}
+
+/*COLOR FONDO AURUM*/
+#aurum .img_Producto{
+	background-color: var(--amarillo);
+}
+
+/*ESTILOS IMAGEN TODOS*/
+.img_Producto img{
+	width: 279px;
+	height: 441px;
+	margin-top: -8%;
+	z-index: 1;
+}
+
+/*CIRCULOS TODOS*/
+.circulos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 53%;
+}
+
+.circuloGrande{
+	width: 330px;
+	height: 330px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.circuloPequeño{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+/*CIRCULOS FONDO AURUM*/
+#aurum .circuloGrande{
+	background-color: var(--amarilloClaro);
+}
+
+#aurum .circuloPequeño{
+	background-color: var(--blanco);
+}
+
+/*CONTENEDOR NOMBRE Y BOTON TODOS*/ 
+.desc_Producto .nombreBebida{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15%;
+	width: 95%;
+}
+
+.desc_Producto .tipos{
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+/*TITULOS TODOS*/
+.desc_Producto h1{
+	font-size: 45px;
+}
+
+/*BOTON TODOS*/ 
+.desc_Producto .boton{
+	font-family: var(--fuente);
+	font-size: 20px;
+	color: var(--blanco);
+	background-color: var(--rojo);
+	width: 108px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0%;
+}
+
+/*IMAGEN PRESENTACION TODOS*/
+.desc_Producto img{
+	width: 35px;
+	height: 94px;
+	margin-top: -6%;
+}
+
+/*PRECIO TODOS*/
+.desc_Producto h3{
+	font-family: var(--fuente);
+	font-size: 20px; 
+	color: var(--rojo);
+}
+
+/*TITULO DESCRIPCION TODOS*/ 
+.desc_Producto h2{
+	font-family: var(--fuente);
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--azulTipografia);
+	margin-top: 4%;
+}
+
+/*DESCRIPCCION TODOS*/ 
+.desc_Producto p{
+	font-size: 18px;
+	color: var(--azulTipografia);
+	width: 95%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+
+}
+
+/*DETALLES TODOS*/
+.desc_Producto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tipos{
+	justify-content: center;
+	z-index: -20;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+/*KILA----------------------------------------------------------------*/
+
+.menuKila{
+	background-color: var(--azul);
+}
+
+.menuKila .navegacion .lineasMenu .linea{
+	background-color: var(--blanco);
+}
+
+#kila .img_Producto{
+	background-color: var(--azul);
+}
+
+#kila .circuloGrande{
+	background-color: var(--azulClaro);
+}
+
+#kila .circuloPequeño{
+	background-color: var(--blanco);
+}
+
+#kila .desc_Producto div{
+	gap: 34%;
+}
+
+#kila .tipos{
+	justify-content: center;
+}

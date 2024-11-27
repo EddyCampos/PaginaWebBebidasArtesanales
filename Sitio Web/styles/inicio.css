@@ -1,0 +1,280 @@
+/*NUESTRAS BEBIDAS, PRIMERA SECCION---------------------------------------------------*/
+
+/*BURBUJA WA*/
+#chatBox{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: var(--verde);
+	z-index: 200;
+	top: 88vh;
+	left: 79vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#chatBox .logoChat{
+	z-index: 3;
+}
+
+#chatBox img{
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+}
+
+#chatBox .animacionChat{
+	z-index: 2;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: var(--verde);
+	animation: chat 4s infinite ease-in-out;
+}
+
+@keyframes chat{
+	0%{transform: scale(1.0);
+		opacity: 1;}
+
+	100%{transform: scale(1.4);
+		opacity: 0}
+}
+
+/*FONDO BLANCO PARA TODO EL SITIO*/
+.pagIndex{
+	background-color: var(--blanco);
+}
+
+.segundaSeccion{
+	width: 100%;
+	height: 576px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	
+	background: url(../images/olas_NB.svg);
+	background-repeat: no-repeat;		
+	background-size: 180%;
+	background-position:50% 100% ;
+}
+
+.segundaSeccion .olas{
+	width: 200%;
+	margin-left: -4em;
+	position: absolute;
+}
+
+.segundaSeccion .olas path{
+	animation: colorOla 10s infinite ease-in-out;
+}
+
+@keyframes colorOla{
+	0%{fill: var(--amarilloClaro);}
+
+	40%{fill: var(--amarilloClaro);}
+	50%{fill: var(--azulClaro);}
+	
+	90%{fill: var(--azulClaro);}
+	100%{fill: var(--amarilloClaro);}
+}
+
+.segundaSeccion h2, p{
+	font-family: var(--fuente);
+	font-weight: 300;
+	color: var(--azulTipografia);
+	text-align: center;
+}
+
+.segundaSeccion h2{
+	font-size: 45px;
+	line-height: 40px;
+	margin: 13%;
+}
+
+.segundaSeccion p{
+	font-size: 21px;
+	width: 85%;
+}
+
+.ejemplosProductos img{
+	width: 100px;
+	height: 143px;
+	z-index: 2;
+	position: relative;
+}
+
+/*CONTENEDOR CUATRO IMAGENES*/
+.ejemplosProductos{
+	margin-left: 4%;
+	width: 95%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/*BOTELLA CHIRRIPO*/
+#primerEj{
+	margin-top: 2%;
+	margin-left: -5%;
+	transform: rotate(10deg);
+}
+
+/*BOTELLA CIEN*/
+#segundoEj{
+	margin-top: 35%;
+	margin-left: -4%;
+	transform: rotate(-10deg);
+}
+
+/*BOTELLA PARADISE*/
+#tercerEj{
+	margin-top: 5%;
+	margin-left: -3.5%;
+	transform: rotate(-8deg)
+}
+
+/*BOTELLA KILA*/
+#cuartoEj{
+	margin-top: 38%;
+	margin-left: -3%;
+	transform: rotate(5deg)
+}
+
+/*EL COMEJÉN, SEGUNDA SECCION---------------------------------------------------------*/
+
+.terceraSeccion{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 576px;
+	overflow: hidden;
+	position: relative;
+
+	/*OLAS DE FONDO*/
+	background: url(../images/olas_EC.svg);
+	background-repeat: no-repeat;
+	background-size: 180%;
+	background-position: 60% -20%;
+}
+
+.terceraSeccion h2, p{
+	font-family: var(--fuente);
+	font-weight: 300;
+	color: var(--azulTipografia);
+}
+
+.terceraSeccion h2{
+	font-size: 45px;
+	margin-top: 22%
+}
+
+.terceraSeccion p{
+	font-size: 21px;
+	width: 85%;
+	margin-top: 10% ;	
+}
+
+.terceraSeccion img{
+	width: 100vw;
+	height: auto;
+	margin-top: -65%;
+	object-fit: cover;
+}
+
+/* CIRCULO PARA LA IMAGEN*/
+.terceraSeccion div{
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+	top: 55%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+
+	background-color: var(--azul);	
+}
+
+
+/*NUESTRAS REDES, TERCERA SECCION-----------------------------------------------------*/
+
+.cuartaSeccion{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 576px;
+	position: relative;
+	overflow: hidden;
+
+	font-family: var(--fuente);	
+	color: var(--azulTipografia);
+
+	background: url(../images/olasFooter.svg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 150%;
+}
+
+.redesIndex{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.contactoIndex{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.cuartaSeccion h2{
+	font-size: 45px;
+	width: 90%;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 24%;
+}
+
+.cuartaSeccion h3{
+	font-size: 24px;
+	margin-top: 10%;
+	margin-bottom: 8%;
+}
+
+/*ENLACES REDES SOCIALES*/
+.enlaceBold{
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 35px;
+}
+
+.enlaceBold:first-of-type{
+	margin-top: 10%;
+}
+
+/*ENLACES CORREO, NÚMERO, DIRECCIÓN*/
+.enlaceRegular{
+	font-size: 20px;	
+}
+
+/*CIRCULO FONDO*/
+.circuloContacto{
+	width: 531px;
+	height: 531px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -2;
+	top: 30%;
+	right: 40%;
+
+	background-color: var(--rojoClaro);
+	
+}

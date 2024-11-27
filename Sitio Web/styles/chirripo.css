@@ -1,0 +1,66 @@
+/*CHIRRIPO----------------------------------------------------------------*/
+
+/*COLOR MENU*/
+.menuChirripo{
+	background-color: var(--grisFondo);
+}
+
+#chirripo{
+	overflow: hidden;
+}
+
+#chirripo .img_Producto img{
+	margin-top: -6%;
+}
+
+/*CIRCULOS FONDO*/
+#chirripo .img_Producto{
+	background-color: var(--grisFondo);
+}
+
+#chirripo .circuloGrande{
+	background-color: var(--grisCirculo);
+}
+
+#chirripo .circuloPequeño{
+	background-color: var(--blanco);
+}
+
+#chirripo .desc_Producto .nombreBebida{
+	width: 100%;
+	gap: 7%;
+	position: relative;
+	margin-top: 8%;
+}
+
+#chirripo .desc_Producto{
+	display: flex;
+}
+
+#chirripo .desc_Producto h4{
+	font-family: var(--fuente);
+	font-size: 18px;
+	color: var(--azulTipografia);
+}
+
+#chirripo .desc_Producto img{
+	margin-top: 1%;
+}
+
+#chirripo .desc_Producto .tipos{
+	justify-content: center;
+}
+
+#chirripo .desc_Producto .nombreBebida :first-child{
+	line-height: 6px;
+}
+
+
+#chirripo .desc_Producto .boton{
+	margin-top: -2%;
+}
+
+#chirripo .tipos{
+	margin-top: 6%;
+}
+
